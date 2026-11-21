@@ -12,8 +12,18 @@ main p {
   line-height: 1.55;
   max-width: 62ch;
 }
+
+.film-frame { position: relative; }
+.film-play {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+  display: grid; place-items: center; width: 56px; height: 56px;
+  background: var(--accent); color: white; border: 0; border-radius: 50%; cursor: pointer;
+}
+.film-play[hidden] { display: none; }
+.film-play svg { width: 24px; height: 24px; }
+.film-play:focus-visible { outline: 3px solid white; outline-offset: 3px; }
 </style></head>
-<body><svg width="0" height="0" aria-hidden="true" style="position:absolute"><symbol id="external-arrow" viewBox="0 0 20 20"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="10" r="8.5"/><path d="m6.8 13.2 6.4-6.4m-5.8 0h5.8v5.8" stroke-linecap="round" stroke-linejoin="round"/></g></symbol></svg><header><a href="#top" aria-label="KV Hopper home">KV Hopper</a><nav><a href="#instrument">Instrument</a><a href="#recordings">Recordings</a></nav></header>
+<body><svg width="0" height="0" aria-hidden="true" style="position:absolute"><symbol id="external-arrow" viewBox="0 0 20 20"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="10" r="9.5" fill="currentColor" stroke="none"/><path stroke="white" d="m6.8 13.2 6.4-6.4m-5.8 0h5.8v5.8" stroke-linecap="round" stroke-linejoin="round"/></g></symbol></svg><header><a href="#top" aria-label="KV Hopper home">KV Hopper</a><nav><a href="#instrument">Instrument</a><a href="#recordings">Recordings</a></nav></header>
 <main id="top"><div class="cover"><h1>Player Piano<br>Music<span>:</span><br><em>KV Hopper</em></h1><div class="hero"><img src="nameplate.jpg" alt="Muzelle brass nameplate above the keys, beneath fan-shaped panes of glass"></div></div>
 <section id="instrument"><div class="sectionhead"><small>01 / Instrument</small><h2>The Muzelle</h2></div>
 <div class="spread"><div class="instrument-photos"><figure><a href="mounted-roll.jpg"><img loading="lazy" src="mounted-roll.jpg" width="1050" height="1400" alt="Paper leader hooked to the wooden take-up spool."></a><figcaption>Paper leader hooked to the wooden take-up spool.</figcaption></figure>
@@ -26,10 +36,38 @@ main p {
 <div class="technical"><h3>Reading the roll</h3><div><p>On a pneumatic player, the paper normally covers the openings in the tracker bar. A perforation passing over an opening admits air into a small tube. A valve switches the corresponding pneumatic to suction. As its bellows folds, a linkage operates the piano action and the hammer strikes a string. The paper stores timing and pitch. The piano supplies the sound.</p><p>These illustrated references explain the mechanism. A factory service manual matched to Hopper’s instrument has yet to surface.</p>
 <a class="row" href="https://www.player-care.com/shop-chart.html">Gulbransen’s 1919 shop chart <span>Diagram&nbsp;<svg class="external-arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20"><use href="#external-arrow"/></svg></span></a><a class="row" href="https://www.player-care.com/pdf/pages1_13.pdf">Rebuilding the Player Piano <span>PDF&nbsp;<svg class="external-arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20"><use href="#external-arrow"/></svg></span></a><a class="row" href="https://www.player-care.com/player-piano-service-manuals.html">Service manuals by action type <span>Index&nbsp;<svg class="external-arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20"><use href="#external-arrow"/></svg></span></a></div></div></section>
 <section id="recordings"><div class="sectionhead"><small>02 / Recordings</small><h2>Music for Player Pianos</h2></div><div class="technical"><div><h3>KV Hopper</h3><p>All music written and created by KV Hopper without any help from AI.</p></div><div><iframe loading="lazy" title="Music for Player Pianos by KV Hopper on SoundCloud" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2211556535&amp;color=%237413ff&amp;auto_play=false&amp;show_artwork=false&amp;visual=false"></iframe><a href="https://soundcloud.com/longtwins/sets/music-for-player-pianos">Open the collection on SoundCloud&nbsp;<svg class="external-arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20"><use href="#external-arrow"/></svg></a></div></div>
-<h3>Process films</h3><div class="films">
+<h3 id="process-films">Process films</h3><div class="films">
 <figure><video controls playsinline preload="none" poster="4946.jpg" aria-label="Keyboard and paper roll" src="4946.mp4"></video><figcaption>Keyboard and paper roll</figcaption></figure>
 <figure><video controls playsinline preload="none" poster="4951.jpg" aria-label="Detail of the moving paper" src="4951.mp4"></video><figcaption>Detail of the moving paper</figcaption></figure>
 <figure><video controls playsinline preload="none" poster="4952.jpg" aria-label="The open cabinet, side view" src="4952.mp4"></video><figcaption>The open cabinet, side view</figcaption></figure>
 </div><div class="technical"><h3 id="room-sound">From the room</h3><div><p>The audio from the moving-paper film, heard on its own.</p><audio controls preload="none" aria-label="Room recording of the moving-paper film" src="roll-study.m4a"></audio></div></div><p>With the lid raised, Hopper positions microphones above the action to capture the piano and the sound of the room together.</p><div class="films"><figure><a href="room-setup.jpg"><img loading="lazy" width="1050" height="1400" src="room-setup.jpg" alt="Two boom stands reach over the open lid." style="height:auto"></a><figcaption>Two boom stands reach over the open lid.</figcaption></figure>
 <figure><a href="microphone-placement.jpg"><img loading="lazy" width="1050" height="1400" src="microphone-placement.jpg" alt="A condenser microphone just above the piano action." style="height:auto"></a><figcaption>A condenser microphone just above the piano action.</figcaption></figure>
-<figure><a href="recording-desk.jpg"><img loading="lazy" width="1050" height="1400" src="recording-desk.jpg" alt="The laptop and mixer beside the Muzelle." style="height:auto"></a><figcaption>The laptop and mixer beside the Muzelle.</figcaption></figure></div></section></main><footer>KV Hopper <a href="#top">Back to top ↑</a></footer></body></html>
+<figure><a href="recording-desk.jpg"><img loading="lazy" width="1050" height="1400" src="recording-desk.jpg" alt="The laptop and mixer beside the Muzelle." style="height:auto"></a><figcaption>The laptop and mixer beside the Muzelle.</figcaption></figure></div></section></main><footer>KV Hopper <a href="#top">Back to top ↑</a></footer><script>
+for (const film of document.querySelectorAll('.films video')) {
+  const frame = document.createElement('div');
+  frame.className = 'film-frame';
+  film.before(frame);
+  frame.append(film);
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'film-play';
+  button.setAttribute('aria-label', 'Play ' + film.getAttribute('aria-label'));
+  button.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="white" d="M6 3.5a1 1 0 0 1 1.5-.86l14 8.5a1 1 0 0 1 0 1.72l-14 8.5A1 1 0 0 1 6 20.5z"/></svg>';
+  frame.append(button);
+  film.controls = false;
+  function updateButton() {
+    button.hidden = !film.paused && !film.ended;
+  }
+  button.addEventListener('click', async () => {
+    try {
+      await film.play();
+      film.controls = true;
+      film.focus();
+    } catch {
+      film.controls = true;
+      button.hidden = true;
+    }
+  });
+  for (const event of ['play', 'pause', 'ended']) film.addEventListener(event, updateButton);
+}
+</script></body></html>
