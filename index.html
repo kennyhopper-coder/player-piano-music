@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#c8c8c8"><title>Player Piano Music: KV Hopper</title><meta name="description" content="Original compositions by KV Hopper, process films, and a history of the Muzelle player piano."><link rel="stylesheet" href="style.css?v=c2c2c2"><style>:root{--paper:#c8c8c8}.instrument-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.instrument-photos figure:first-child{grid-column:1/-1}.instrument-photos img{height:auto}.instrument-photos a{display:block}.external-arrow{width:1.05em;height:1.05em;vertical-align:-.15em;color:var(--accent)}
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fed2be"><title>Player Piano Music: KV Hopper</title><meta name="description" content="Original compositions by KV Hopper, process films, and a history of the Muzelle player piano."><link rel="stylesheet" href="style.css?v=c2c2c2"><style>:root{--paper:#fed2be;--ink:#0500d9;--accent:var(--ink)}
+h1 span,figcaption{color:var(--ink)}
+.row{border-color:var(--ink)}
+.films video,.spread figure img{background:var(--paper)}.instrument-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.instrument-photos figure:first-child{grid-column:1/-1}.instrument-photos img{height:auto}.instrument-photos a{display:block}.external-arrow{width:1.05em;height:1.05em;vertical-align:-.15em;color:var(--accent)}
 @font-face {
   font-family: "Courier Prime";
   src: url("courier-prime.ttf") format("truetype");
@@ -17,13 +20,13 @@ main p {
 .film-play {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
   display: grid; place-items: center; width: 56px; height: 56px;
-  background: var(--accent); color: white; border: 0; border-radius: 50%; cursor: pointer;
+  background: var(--accent); color: var(--paper); border: 0; border-radius: 50%; cursor: pointer;
 }
 .film-play[hidden] { display: none; }
 .film-play svg { width: 24px; height: 24px; }
-.film-play:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+.film-play:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
 </style></head>
-<body><svg width="0" height="0" aria-hidden="true" style="position:absolute"><symbol id="external-arrow" viewBox="0 0 20 20"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="10" r="9.5" fill="currentColor" stroke="none"/><path stroke="white" d="m6.8 13.2 6.4-6.4m-5.8 0h5.8v5.8" stroke-linecap="round" stroke-linejoin="round"/></g></symbol></svg><header><a href="#top" aria-label="KV Hopper home">KV Hopper</a><nav><a href="#instrument">Instrument</a><a href="#recordings">Recordings</a></nav></header>
+<body><svg width="0" height="0" aria-hidden="true" style="position:absolute"><symbol id="external-arrow" viewBox="0 0 20 20"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="10" r="9.5" fill="currentColor" stroke="none"/><path stroke="var(--paper)" d="m6.8 13.2 6.4-6.4m-5.8 0h5.8v5.8" stroke-linecap="round" stroke-linejoin="round"/></g></symbol></svg><header><a href="#top" aria-label="KV Hopper home">KV Hopper</a><nav><a href="#instrument">Instrument</a><a href="#recordings">Recordings</a></nav></header>
 <main id="top"><div class="cover"><h1>Player Piano<br>Music<span>:</span><br><em>KV Hopper</em></h1><div class="hero"><img src="nameplate.jpg" alt="Muzelle brass nameplate above the keys, beneath fan-shaped panes of glass"></div></div>
 <section id="instrument"><div class="sectionhead"><small>01 / Instrument</small><h2>The Muzelle</h2></div>
 <div class="spread"><div class="instrument-photos"><figure><a href="mounted-roll.jpg"><img loading="lazy" src="mounted-roll.jpg" width="1050" height="1400" alt="Paper leader hooked to the wooden take-up spool."></a><figcaption>Paper leader hooked to the wooden take-up spool.</figcaption></figure>
@@ -35,7 +38,7 @@ main p {
 </article></div>
 <div class="technical"><h3>Reading the roll</h3><div><p>On a pneumatic player, the paper normally covers the openings in the tracker bar. A perforation passing over an opening admits air into a small tube. A valve switches the corresponding pneumatic to suction. As its bellows folds, a linkage operates the piano action and the hammer strikes a string. The paper stores timing and pitch. The piano supplies the sound.</p><p>These illustrated references explain the mechanism. A factory service manual for this instrument has yet to surface.</p>
 <a class="row" href="https://www.player-care.com/shop-chart.html">Gulbransen’s 1919 shop chart <span>Diagram&nbsp;<svg class="external-arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20"><use href="#external-arrow"/></svg></span></a><a class="row" href="https://www.player-care.com/pdf/pages1_13.pdf">Rebuilding the Player Piano <span>PDF&nbsp;<svg class="external-arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20"><use href="#external-arrow"/></svg></span></a><a class="row" href="https://www.player-care.com/player-piano-service-manuals.html">Service manuals by action type <span>Index&nbsp;<svg class="external-arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20"><use href="#external-arrow"/></svg></span></a></div></div></section>
-<section id="recordings"><div class="sectionhead"><small>02 / Recordings</small><h2>Music for Player Pianos</h2></div><div class="technical"><div><h3>KV Hopper</h3><p>I wrote all the music without any help from AI.</p></div><div><iframe loading="lazy" title="Music for Player Pianos by KV Hopper on SoundCloud" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2211556535&amp;color=%237413ff&amp;auto_play=false&amp;show_artwork=false&amp;visual=false"></iframe><a href="https://soundcloud.com/longtwins/sets/music-for-player-pianos">Open the collection on SoundCloud&nbsp;<svg class="external-arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20"><use href="#external-arrow"/></svg></a></div></div>
+<section id="recordings"><div class="sectionhead"><small>02 / Recordings</small><h2>Music for Player Pianos</h2></div><div class="technical"><div><h3>KV Hopper</h3><p>I wrote all the music without any help from AI.</p></div><div><iframe loading="lazy" title="Music for Player Pianos by KV Hopper on SoundCloud" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2211556535&amp;color=%230500d9&amp;auto_play=false&amp;show_artwork=false&amp;visual=false"></iframe><a href="https://soundcloud.com/longtwins/sets/music-for-player-pianos">Open the collection on SoundCloud&nbsp;<svg class="external-arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20"><use href="#external-arrow"/></svg></a></div></div>
 <h3 id="process-films">Process films</h3><div class="films">
 <figure><video controls playsinline preload="none" poster="4946.jpg" aria-label="Keyboard and paper roll" src="4946.mp4"></video><figcaption>Keyboard and paper roll</figcaption></figure>
 <figure><video controls playsinline preload="none" poster="4951.jpg" aria-label="Detail of the moving paper" src="4951.mp4"></video><figcaption>Detail of the moving paper</figcaption></figure>
@@ -53,7 +56,7 @@ for (const film of document.querySelectorAll('.films video')) {
   button.type = 'button';
   button.className = 'film-play';
   button.setAttribute('aria-label', 'Play ' + film.getAttribute('aria-label'));
-  button.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="white" d="M6 3.5a1 1 0 0 1 1.5-.86l14 8.5a1 1 0 0 1 0 1.72l-14 8.5A1 1 0 0 1 6 20.5z"/></svg>';
+  button.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 3.5a1 1 0 0 1 1.5-.86l14 8.5a1 1 0 0 1 0 1.72l-14 8.5A1 1 0 0 1 6 20.5z"/></svg>';
   frame.append(button);
   film.controls = false;
   function updateButton() {
